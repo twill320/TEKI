@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TEKI</title>
+        <link 
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+            integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+            crossorigin="anonymous"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="home" id="navbar__logo"><img class="arrow__img" src="images/ARROW.png" width="100px" height="80px">TEKI</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span> <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">                        
+                        <a href="projects" class="navbar__links">PROJECTS</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="sp500_plot">
+            <img src="images/sp500.png" class="plot">
+            <p class="plot_description">
+                Over the month-long window from August 1 to September 1, 2024, the chart presents a combined view of the S&amp;P 500’s price action and trading activity. In the top panel, each day is rendered as a candlestick whose body reflects whether the index closed above (green) or below (red) its opening price, with thin “wicks” marking that day’s intraday highs and lows. Directly beneath, the bottom panel shows daily volume bars aligned to the same dates, so you can instantly see which price swings happened on heavier trading days. By sharing a single date axis and cleanly separating price from volume, the plot makes it easy to spot correlations between market momentum and trading intensity.
+            </p>
+        </div>
+        <hr style="width:40%; margin: 5% auto;">
+    </body>
+</html>

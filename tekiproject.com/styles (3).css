@@ -1,0 +1,391 @@
+html {
+  background-color: #e6e6e6;
+  height: 100%;
+}
+body {
+  background: transparent; 
+  min-height: 100%;
+}
+
+.main,
+#about {
+  background: transparent;
+}
+
+.arrow__img {
+    margin-right: 0;
+    transform: translateY(5px);
+}
+
+.navbar {
+    background: #131313;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    z-index: 999;
+    border-radius: 5px;
+}
+
+.navbar__container {
+    background: #131313;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 5px;
+}
+
+#navbar__logo {
+    background-color: #00FFFF;
+    background-image: linear-gradient(to top, #008080 0%, #00FFFF 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display:flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.fa-gem {
+    margin-right: 0.5rem;
+}
+
+.navbar__menu {
+    background: #131313;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__item {
+    background: #131313;
+    height: 10%;
+}
+
+.navbar__links {
+    color: #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+}
+
+.navbar__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #00FFFF;
+    color: #fff;
+}
+
+.button:hover {
+    background: #f3f3f5;
+    transition: all 0.3s ease;
+}
+
+.button:after {
+    background: cyan;
+    transition: all 0.3s ease;
+}
+
+.navbar__links {
+  /* when you un-hover, wait 0.5s before fading back */
+  transition: color 0.3s ease 0.1s;
+}
+
+.navbar__links:hover {
+    color: #12bbb9;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 960px) {
+    .navbar__container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .navbar__menu {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        height: 50vh;
+        z-index: -1;
+        background: #131313;
+    }
+    
+    .navbar__menu.active {
+        background: #131313;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 50vh;
+        font-size: 1.6rem;
+    }
+
+    #navbar__logo {
+        padding-left: 25px;
+        font-weight: bold;
+    }
+
+    .navbar__toggle .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        /*background: #fff;*/
+    }
+
+    .navbar__item {
+        width: 100%;
+    }
+
+    .navbar__links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    .navbar__btn {
+        padding-bottom: 2rem;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 80px;
+        margin: 0 auto;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .navbar__toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+/* Introduction Section CSS */
+
+.main__container {
+    display: flex;
+    align-items: center;
+    /*justify-self: center;*/
+    margin: 0 auto;
+    height: 90vh;
+    z-index: 100%;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.main__content {
+    font-size: 1.3rem;
+    background-color: #f2f2f2;
+    background-image: linear-gradient(#F0F8FF
+    0%, #F0F8FF 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: #131313;
+    width: 50%;
+}
+
+.main__content h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.main__content p {
+    text-align: left;
+    width: 40vw;
+    height: 50vh;
+}
+
+.main__btn {
+    font-size: 1rem;
+    background-color: #00FFFF;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    color: #f0f8ff;
+    margin-top: 2rem;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+    cursor: pointer;
+}
+
+.main__btn a {
+    position: relative;
+    z-index: 2;
+    color: #f0f8ff;
+    text-decoration: none;
+}
+
+.main__btn:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #4837ff;
+    transition: all 0.35s;
+    border-radius: 4px;
+    color: #f0f8ff;
+}
+
+.main__btn:hover {
+    color: #f0f8ff;
+}
+
+.main__btn:hover:after {
+    width: 100%;
+    color: #f0f8ff;
+}
+
+.main__img--container {
+    width: 50%;
+    align-self: flex-start;
+    margin-top: 5%;
+}
+
+#main__img {
+    height: 70vh;
+    width: 50vw;
+}
+
+@media screen and (max-width: 760px) {
+    .main__container {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 50%;
+        margin: 0 auto;
+        height: 90vh;
+    }
+
+    .main__content {
+        text-align: left;
+        margin-bottom: 4rem;
+}
+
+    .main__content h1 {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .main__content p {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .main__content h1 {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+    
+    .main__content p {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    .main__btn {
+        padding: 12px 36px;
+        margin: 2.5rem 0;
+        color: #f0f8ff;
+    }
+}
+
+#about {
+    color: #f0f8ff;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: left;
+    width: 80vw;
+    position: relative;
+    top: 20vh;
+}
+
+.sp500_plot {
+  display: flex;
+  flex-direction: column;   /* stack the img then the p vertically */
+  align-items: center;      /* center them horizontally */
+  text-align: center;       /* center the paragraph text */
+  gap: 1rem;                /* optional space between the image and the text */
+  padding: 1rem;            /* optional padding around the whole block */
+}
+
+.sp500_plot .plot {
+    width: 70%;
+  max-width: 100%;          /* make sure it doesn’t overflow its container */
+  height: auto;             /* keep its aspect ratio */
+}
