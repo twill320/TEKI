@@ -1,4 +1,5 @@
 <img width="1724" height="930" alt="teki_homepage" src="https://github.com/user-attachments/assets/e9a6c79e-ca19-40e5-8c23-39bdbaaec585" />
+http://tekiproject.com/
 <br><br><br>
 Developed a custom, minimalist web platform designed to serve as a digital sandbox and creative outlet. Built entirely from scratch, TEKI functions as a central hub to host, document, and share technical projects, featuring a scalable structure to accommodate live program demos, code repositories, and technical walkthroughs.
 
