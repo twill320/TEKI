@@ -1,20 +1,54 @@
-<img width="1724" height="930" alt="teki_homepage" src="https://github.com/user-attachments/assets/e9a6c79e-ca19-40e5-8c23-39bdbaaec585" />
-http://tekiproject.com/
-<br><br><br>
-Developed a custom, minimalist web platform designed to serve as a digital sandbox and creative outlet. Built entirely from scratch, TEKI functions as a central hub to host, document, and share technical projects, featuring a scalable structure to accommodate live program demos, code repositories, and technical walkthroughs.
+# TEKI Project Hub
 
-Technical Stack:
+[![Live Demo](https://img.shields.io/badge/Live_Site-tekiproject.com-00a896?style=flat-square)](http://tekiproject.com/)
+[![Built With](https://img.shields.io/badge/Stack-HTML5_|_CSS3_|_JS-orange?style=flat-square)]()
 
-Languages: HTML, CSS, JavaScript
+A custom-engineered, minimalist portfolio and digital sandbox designed to host, document, and showcase technical projects, live software demos, and technical walkthroughs.
 
-Design/Styling: Custom CSS Layout
+---
 
-Future Integrations: Python (for backend logic or embedded applications)
+## Overview
 
-Key Features & Implementation:
+**TEKI** serves as a centralized technical showcase and interactive workbench. Built entirely from scratch without the overhead of heavy content management systems (CMS) or pre-built site templates, this platform emphasizes clean architecture, custom CSS tokenization, fluid micro-interactions, and responsive UI design.
 
-Foundational Front-End Development: Engineered from the ground up without relying on heavy content management systems or site builders. This demonstrates a strong, hands-on command of core web technologies and responsive document structuring.
+---
 
-Minimalist UI/UX Design: Features a clean, distraction-free interface with a distinct geometric aesthetic. The use of a neutral color palette with high-contrast teal accents ensures that the user's attention remains focused on the content and project showcases.
+## Key Features
 
-Scalable Project Architecture: Designed with a modular layout—including dedicated project tabs—to easily integrate and categorize future work. The site is built to handle various media types, from embedded demo videos to links for locally runnable programs.
+* **Zero-Framework Architecture:** Developed using vanilla web standards (HTML5, modular CSS3, ES6+ JavaScript) to maximize performance and maintain full control over the rendering lifecycle.
+* **Minimalist, Content-First UI/UX:** Styled with a geometric visual language, utilizing a neutral core palette complemented by high-contrast teal accents for readability and structured visual hierarchy.
+* **Curated Typography System:** Structured across three dedicated typefaces—`Fraunces` for high-impact display titles, `Public Sans` for body copy, and `IBM Plex Mono` for technical labels and navigation tokens.
+* **Fluid Keyframe Animations & Micro-Interactions:** Includes staggered entrance animations (`rise`, `rise-mark`), logo hover rotations, expanding link underlines, and an interactive backdrop-blur navbar (`navbar--scrolled`).
+* **Accessibility & Motion Preferences:** Built-in `:focus-visible` accessibility rings and explicit `@media (prefers-reduced-motion: reduce)` overrides to disable animations for users with motion sensitivity.
+* **Adaptive Multi-Breakpoint Layout:** Two-tier responsive layout (`900px` grid collapse and `720px` mobile navigation drawer transition) built with CSS Grid and Flexbox.
+* **Modular Project Architecture:** Scalable view structure featuring tabbed project routing to accommodate technical documentation, embedded media, and interactive demos.
+
+---
+
+## Tech Stack
+
+| Category | Technology | Implementation Details |
+| :--- | :--- | :--- |
+| **Markup & Semantics** | HTML5 | Semantic landmarks, accessible document structure, smooth scrolling |
+| **Styling & Layout** | CSS3 (Grid / Flexbox) | Custom design tokens (`:root`), cubic-bezier transitions, fluid `clamp()` sizing, keyframe animations |
+| **Logic & Scripting** | JavaScript (ES6+) | Scroll observers for dynamic navbar blur and mobile hamburger drawer toggling |
+| **Planned Integrations** | Python | Backend services, API routing, and embedded tooling |
+
+---
+
+## Roadmap
+
+- [ ] Integrate a Python-based backend service (FastAPI/Flask) for dynamic API endpoints.
+- [ ] Add interactive in-browser terminal or live code sandboxes for featured software.
+- [ ] Implement automated CI/CD deployment workflows.
+
+---
+
+## Quick Start (Local Setup)
+
+Clone the repository and open the entry point in any browser:
+
+```bash
+git clone [https://github.com/twill320/TEKI.git
+cd TEKI
+open home.html
